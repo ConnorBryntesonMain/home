@@ -46,6 +46,7 @@ section {
     padding: 10px;
     border: 1px solid #ddd;
     width: calc(31.333% - 20px);
+    aspect-ratio: 1; /* Makes the project blocks square */
 }
 
 footer {
@@ -53,4 +54,17 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column; /* Stack blocks vertically */
+        align-items: center; /* Center the blocks */
+    }
+
+    .project {
+        width: calc(100% - 20px); /* Full width minus padding */
+        max-width: 300px; /* Optional: Set a max-width to avoid too large blocks */
+    }
 }
