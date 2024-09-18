@@ -65,7 +65,7 @@ footer {
 
     .project {
         width: 100%; /* Full width for each project */
-        max-width: 350px; /* Optionally, set a max-width */
-        height: 350px; /* Set height to create square blocks */
+        max-width: 330px; /* Optionally, set a max-width */
+        height: 330px; /* Set height to create square blocks */
     }
 }
