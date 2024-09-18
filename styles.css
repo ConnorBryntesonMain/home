@@ -46,7 +46,7 @@ section {
     padding: 10px;
     border: 1px solid #ddd;
     width: calc(31.333% - 20px);
-    aspect-ratio: 1; /* Makes the project blocks square */
+    height: auto;
 }
 
 footer {
@@ -59,13 +59,13 @@ footer {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .project-list {
-        flex-direction: column; /* Stack blocks vertically */
-        align-items: center; /* Center the blocks */
+        flex-direction: column; /* Stack the blocks vertically */
+        align-items: center;
     }
 
     .project {
-        height: fit-content;
-        width: calc(100% - 20px); /* Full width minus padding */
-        max-width: 300px; /* Optional: Set a max-width to avoid too large blocks */
+        width: 100%; /* Full width for each project */
+        max-width: 350px; /* Optionally, set a max-width */
+        height: 350px; /* Set height to create square blocks */
     }
 }
