@@ -4,48 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor's Projects</title>
+    <title>Connor's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Projects</h1>
+        <h1>Connor Brynteson</h1>
+        <p>Computer Science & Sustainable Development</p>
     </header>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Stock Market Project</h3>
-                <p>This is a Java project simulating a stock market, featuring classes like Stock Market Project and Flower Shares. It builds a simple stock trading environment where users can interact with shares and manage purchases through a GUI. The code handles stock transactions, displays information, and simulates market activities. The project demonstrates practical use of Java object-oriented programming concepts and graphical user interface design, making it a great showcase for applying Java skills in a real-world scenario.</p>
-                <a href="https://github.com/ConnorBryntesonMain/JavaFinalProject160" target="_blank">View on GitHub</a>
+    
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+            <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+            <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="hero">
+                <h2>Welcome to My Portfolio</h2>
+                <p>I'm a Computer Science student at St. John's University in Minnesota with interests in:</p>
+                <div class="featured-skills">
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Web Development</span>
+                    <span class="skill-badge">Parallel Processing</span>
+                    <span class="skill-badge">AI Tools</span>
+                </div>
+                <a href="#projects" class="btn nav-btn" data-page="projects">View My Projects</a>
             </div>
-            <div class="project">
-                <h3>Intro Web Scraper</h3>
-                <p>The "Public Web Scraper" is a Python project designed to demonstrate the basics of web scraping by targeting manhwa (as an example) sites. It features critical scripts like manhwa graber for data extraction and web scap chaplist for managing chapter lists. This project showcases practical scraping techniques, providing a real-world coding example perfect for those learning Python and web scraping. </p>
-                <a href="https://github.com/ConnorBryntesonMain/PublicWebScraper/tree/main" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>AI Driven Test Generation</h3>
-                <p>HPCG Testing and Artifact Generation is an ongoing research effort into using new and different tools in code development. This includes but is not limited to seeing how different AI tools perform better for specific tasks and how you can change statements to provide the best results for the project you are working on. We have seen how different AI tools change their outputs based on their place in the development cycle. In addition to the idea, some AI tools are not very good at performing jobs of testing larger systems. </p>
-            </div>
+            
+            <section>
+                <h2>What I Do</h2>
+                <div class="about-container">
+                    <div class="about-content">
+                        <p>I focus on creating efficient, sustainable software solutions. My work spans from simulating stock markets to developing web scrapers and exploring AI-driven test generation.</p>
+                        <p>I'm particularly interested in how parallel processing and modern development tools can create more efficient workflows and sustainable code.</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, I am Connor. I am a current undergraduate student at St.John's University in Minnesota. I major in Computer Science, but my interests are more in parallel processing and the tools people can use to speed up their development process. This is a fascinating area regarding the widespread application of the results. Moving away from computers, I am interested in sustainability and how we can improve code for people and the planet. </p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:CBrynteso001@csbsju.edu">CBrynteso001@csbsju.edu</a></p>
-        <h2>LinkedIn</h2>
-        <p>You can find my LinkedIn at: <a href="https://www.linkedin.com/in/connor-brynteson-a55017296/">LinkedIn Profile</a></p>
-    </section>
-
+        
+        <!-- Projects Page -->
+        <div id="projects-page" class="page">
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="project-list">
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Stock Market Project</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>This is a Java project simulating a stock market, featuring classes like Stock Market Project and Flower Shares. It builds a simple stock trading environment where users can interact with shares and manage purchases through a GUI. The code handles stock transactions, displays information, and simulates market activities.</p>
+                            <a href="https://github.com/ConnorBryntesonMain/JavaFinalProject160" target="_blank" class="btn">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Intro Web Scraper</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>The "Public Web Scraper" is a Python project designed to demonstrate the basics of web scraping by targeting manhwa (as an example) sites. It features critical scripts like manhwa graber for data extraction and web scap chaplist for managing chapter lists.</p>
+                            <a href="https://github.com/ConnorBryntesonMain/PublicWebScraper/tree/main" target="_blank" class="btn">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>AI Driven Test Generation</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>HPCG Testing and Artifact Generation is an ongoing research effort into using new and different tools in code development. This includes seeing how different AI tools perform better for specific tasks and how statement modifications can provide the best results for projects.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Space for additional projects -->
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Project 4</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>This is a placeholder for an additional project. You can add more details about your fourth project here.</p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Project 5</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>This is a placeholder for an additional project. You can add more details about your fifth project here.</p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Project 6</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>This is a placeholder for an additional project. You can add more details about your sixth project here.</p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about-content">
+                        <p>Hello, I am Connor. I am a current undergraduate student at St. John's University in Minnesota. I major in Computer Science, but my interests are more in parallel processing and the tools people can use to speed up their development process. This is a fascinating area regarding the widespread application of the results.</p>
+                        <p>Moving away from computers, I am interested in sustainability and how we can improve code for people and the planet.</p>
+                        <p>Throughout my academic journey, I've developed skills in various programming languages and frameworks, with a particular focus on creating efficient and sustainable code. I believe in the power of technology to solve real-world problems while minimizing environmental impact.</p>
+                        <p>My goal is to continue exploring the intersection of high-performance computing and sustainability, finding ways to make our digital infrastructure more efficient and environmentally friendly.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <section id="contact">
+                <h2>Get In Touch</h2>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:CBrynteso001@csbsju.edu" class="contact-link">CBrynteso001@csbsju.edu</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">👔</div>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/connor-brynteson-a55017296/" class="contact-link" target="_blank">Connor Brynteson</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/ConnorBryntesonMain" class="contact-link" target="_blank">ConnorBryntesonMain</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
     <footer>
-        <p>© 2024 Connor Brynteson. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 Connor Brynteson. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Simple tab navigation system
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all nav links and pages
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navBtns = document.querySelectorAll('.nav-btn');
+            const pages = document.querySelectorAll('.page');
+            
+            // Function to show a specific page
+            function showPage(pageId) {
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+                
+                // Remove active class from all nav links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Show the selected page
+                document.getElementById(pageId + '-page').classList.add('active');
+                
+                // Add active class to the corresponding nav link
+                document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+            
+            // Add click event to nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pageId = this.getAttribute('data-page');
+                    showPage(pageId);
+                });
+            });
+            
+            // Add click event to nav buttons
+            navBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pageId = this.getAttribute('data-page');
+                    showPage(pageId);
+                });
+            });
+            
+            // Handle hash changes
+            function handleHashChange() {
+                const hash = window.location.hash.substring(1) || 'home';
+                showPage(hash);
+            }
+            
+            // Listen for hash changes
+            window.addEventListener('hashchange', handleHashChange);
+            
+            // Initial page load
+            handleHashChange();
+        });
+    </script>
 </body>
 </html>
